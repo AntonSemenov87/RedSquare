@@ -90,6 +90,98 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.uri("src/test/resources/features/NavToContact.feature");
+formatter.feature({
+  "name": "Navigation to Contact page",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Contact verification page for header",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@smoke"
+    }
+  ]
+});
+formatter.step({
+  "name": "user is on landing page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "NavToAbout_StepDefs.user_is_on_landing_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Contact button in header",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NavToContact_StepDefs.user_clicks_on_Contact_button_in_header()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is taken to Contact page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "NavToContact_StepDefs.user_is_taken_to_Contact_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.uri("src/test/resources/features/NavToGallery.feature");
+formatter.feature({
+  "name": "Navigation to Gallery page",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Gallery verification page for header",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@smoke"
+    }
+  ]
+});
+formatter.step({
+  "name": "user is on landing page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "NavToAbout_StepDefs.user_is_on_landing_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Gallery button in header",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NavToGallery_StepDefs.user_clicks_on_Gallery_button_in_header()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is taken to Gallery page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "NavToGallery_StepDefs.user_is_taken_to_Gallery_page()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.uri("src/test/resources/features/NavToPress.feature");
 formatter.feature({
   "name": "Navigation to Press page",
@@ -132,6 +224,52 @@ formatter.step({
 });
 formatter.match({
   "location": "NavToPress_StepDefs.user_is_taken_to_Press_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.uri("src/test/resources/features/NavToPromotions.feature");
+formatter.feature({
+  "name": "Navigation to Promotions page",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Promotions verification page for header",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@smoke"
+    }
+  ]
+});
+formatter.step({
+  "name": "user is on landing page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "NavToAbout_StepDefs.user_is_on_landing_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Promotions button in header",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "NavToPromotions_StepDefs.user_clicks_on_Promotions_button_in_header()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is taken to Promotions page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "NavToPromotions_StepDefs.user_is_taken_to_Promotions_page()"
 });
 formatter.result({
   "status": "passed"
