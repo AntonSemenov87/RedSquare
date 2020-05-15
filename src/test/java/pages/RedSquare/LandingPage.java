@@ -42,21 +42,6 @@ public class LandingPage {
     @FindBy(xpath = "(//a[.='About'])[2]")
     public WebElement About_Footer;
 
-    @FindBy(xpath = "(//a[.='Amenities'])[]")
-    public WebElement Amenities_Footer;
-
-    @FindBy(xpath = "(//a[.='Press'])[2]")
-    public WebElement Press_Footer;
-
-    @FindBy(xpath = "(//a[.='Promotions'])[2]")
-    public WebElement Promotions_Footer;
-
-    @FindBy(xpath = "(//a[.='Gallery'])[2]")
-    public WebElement Gallery_Footer;
-
-    @FindBy(xpath = "(//a[.='Contact'])[2]")
-    public WebElement Contact_Footer;
-
     @FindBy(xpath = "(//a[@href='https://www.facebook.com/RussianBath'])[2]")
     public WebElement Facebook_Footer;
 
