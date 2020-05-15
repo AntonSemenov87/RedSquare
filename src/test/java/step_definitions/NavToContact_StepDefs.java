@@ -21,7 +21,7 @@ public class NavToContact_StepDefs {
         String expectedInTitle = "Contact";
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
 
-        Driver.getDriver().quit();
+
     }
 
 }

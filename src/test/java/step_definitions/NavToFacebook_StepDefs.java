@@ -29,9 +29,11 @@ public class NavToFacebook_StepDefs {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedInTitle = "Red Square Spa - Health Spa";
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
+
+        Driver.getDriver().close();
         Driver.getDriver().switchTo().window(parentID);
 
-        Driver.getDriver().quit();
+        //Driver.getDriver().quit();
     }
 
 }

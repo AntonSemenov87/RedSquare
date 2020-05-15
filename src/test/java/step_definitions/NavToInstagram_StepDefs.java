@@ -29,9 +29,12 @@ public class NavToInstagram_StepDefs {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedInTitle = "RedSquareSpa (@redsquarespa_chicago) • Instagram photos and videos";
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
+
+        Driver.getDriver().close();
         Driver.getDriver().switchTo().window(parentID);
 
-        Driver.getDriver().quit();
+
+        //Driver.getDriver().quit();
     }
 
 }

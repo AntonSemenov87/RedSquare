@@ -30,9 +30,10 @@ public class NavToTwitter_StepDefs {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedInTitle = "Chicago Red Square";
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
-        Driver.getDriver().switchTo().window(parentID);
 
-        Driver.getDriver().quit();
+        Driver.getDriver().close();
+        Driver.getDriver().switchTo().window(parentID);
+        //Driver.getDriver().quit();
     }
 
 }

@@ -29,9 +29,10 @@ public class NavToYouTube_StepDefs {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedInTitle = "Red Square Chicago";
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
-        Driver.getDriver().switchTo().window(parentID);
 
-        Driver.getDriver().quit();
+        Driver.getDriver().close();
+        Driver.getDriver().switchTo().window(parentID);
+        //Driver.getDriver().quit();
     }
 
 }
