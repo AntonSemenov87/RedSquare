@@ -14,44 +14,43 @@ public class NavToAbout_StepDefs {
     LandingPage landingPage = new LandingPage();
 
     @Given("user is on landing page")
-    public void user_is_on_landing_page() throws InterruptedException {
+    public void user_is_on_landing_page() {
         Driver.getDriver().get(Config.getProperty("redsquareURL"));
         //WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 5);
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
     }
 
     @When("user clicks on About button in header")
-    public void user_clicks_on_About_button_in_header() throws InterruptedException {
+    public void user_clicks_on_About_button_in_header() {
        landingPage.About_Header.click();
-       Thread.sleep(5000);
+
     }
 
     @Then("user is taken to About page")
-    public void user_is_taken_to_About_page() throws InterruptedException {
+    public void user_is_taken_to_About_page() {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedInTitle = "About";
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
-        Thread.sleep(5000);
+
     }
 
     @When("user return to landing page")
-    public void user_return_to_landing_page() throws InterruptedException {
+    public void user_return_to_landing_page() {
         Driver.getDriver().get(Config.getProperty("redsquareURL"));
-        Thread.sleep(5000);
+
     }
 
     @When("user clicks on About button in footer")
-    public void user_clicks_on_About_button_in_footer() throws InterruptedException {
+    public void user_clicks_on_About_button_in_footer() {
         landingPage.About_Footer.click();
-        Thread.sleep(5000);
+
     }
 
     @Then("user is taken to About page again")
-    public void user_is_taken_to_About_page_again() throws InterruptedException {
+    public void user_is_taken_to_About_page_again() {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedInTitle = "About";
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
-        Thread.sleep(5000);
     }
 
 
