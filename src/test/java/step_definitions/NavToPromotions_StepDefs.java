@@ -20,6 +20,8 @@ public class NavToPromotions_StepDefs {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedInTitle = "Promotions";
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
+
+        Driver.getDriver().quit();
     }
 
 }

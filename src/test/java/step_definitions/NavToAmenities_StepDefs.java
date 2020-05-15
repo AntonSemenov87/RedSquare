@@ -20,6 +20,8 @@ public class NavToAmenities_StepDefs {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedInTitle = "Amenities";
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
+
+        Driver.getDriver().quit();
     }
 
 

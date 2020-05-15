@@ -35,6 +35,8 @@ public class NavToAbout_StepDefs {
         String expectedInTitle = "About";
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
 
+        Driver.getDriver().quit();
+
     }
 
 

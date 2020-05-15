@@ -23,6 +23,8 @@ public class NavToGallery_StepDefs {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedInTitle = "Gallery";
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
+
+        Driver.getDriver().quit();
     }
 
 }

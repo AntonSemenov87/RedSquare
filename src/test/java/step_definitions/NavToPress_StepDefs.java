@@ -20,5 +20,7 @@ public class NavToPress_StepDefs {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedInTitle = "Press";
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
+
+        Driver.getDriver().quit();
     }
 }
