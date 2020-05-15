@@ -4,9 +4,9 @@ Feature: Verification of pages opening when hover over About menu and click on e
   Scenario: Verification of pages open when hover over About and click on items
       Given user is on landing page
       When user hovers over on About menu
-      And click on FAQ
-      Then FAQ page opens
-      And user navigates to home page
+      Then click on FAQ
+      And FAQ page opens
+      Then user navigates to home page
       And user clicks on Testimonials
       Then Testimonials page opens
       And user navigates to home page
