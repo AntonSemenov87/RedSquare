@@ -62,5 +62,19 @@ public class LandingPage {
     @FindBy(xpath = "(//a[.='Wall of Fame'])[1]")
     public WebElement WallOfFame;
 
+    // in Amenities
+    @FindBy(xpath = "(//a[.='Restaurant'])[1]")
+    public WebElement Restaurant;
+    @FindBy(xpath = "(//a[.='Sauna'])[1]")
+    public WebElement Sauna;
+    @FindBy(xpath = "(//a[.='Spa Services'])[1]")
+    public WebElement SpaServices;
+    @FindBy(xpath = "(//a[.='Tanning'])[1]")
+    public WebElement Tanning;
+    @FindBy(xpath = "(//a[.='Massage'])[1]")
+    public WebElement Massage;
+
+
+
 
 }

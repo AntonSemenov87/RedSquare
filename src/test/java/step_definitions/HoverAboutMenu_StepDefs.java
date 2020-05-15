@@ -1,7 +1,9 @@
 package step_definitions;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -20,7 +22,8 @@ public class HoverAboutMenu_StepDefs {
         hoverAbout.moveToElement(landingPage.About_Header).build().perform();
     }
 
-    @When("click on FAQ")
+
+    @Then("click on FAQ")
     public void click_on_FAQ() {
         landingPage.FAQ.click();
     }
