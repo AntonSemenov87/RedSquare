@@ -54,4 +54,13 @@ public class LandingPage {
     @FindBy(xpath = "(//a[@href='https://www.youtube.com/channel/UCOECVH65yYGVBiXFKy0qyng'])[2]")
     public WebElement YouTube_Footer;
 
+    // in About
+    @FindBy(xpath = "(//a[@href='faq-red-square-spa.html'])[1]")
+    public WebElement FAQ;
+    @FindBy(xpath = "(//a[.='Testimonials'])[1]")
+    public WebElement Testimonials;
+    @FindBy(xpath = "(//a[.='Wall of Fame'])[1]")
+    public WebElement WallOfFame;
+
+
 }
