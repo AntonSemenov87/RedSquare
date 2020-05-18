@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "step_definitions",
         dryRun = false,
-        tags = "@smoke1"
+        tags = "@smoke2"
 )
 public class CukesRunner {
 

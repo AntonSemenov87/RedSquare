@@ -74,6 +74,12 @@ public class LandingPage {
     @FindBy(xpath = "(//a[.='Massage'])[1]")
     public WebElement Massage;
 
+    // in Press
+    @FindBy(xpath = "(//a[.='Digital'])[1]")
+    public WebElement Digital;
+    @FindBy(xpath = "(//a[.='Media'])[1]")
+    public WebElement Media;
+
 
 
 

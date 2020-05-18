@@ -3,6 +3,7 @@ package step_definitions;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pages.RedSquare.LandingPage;
@@ -31,14 +32,14 @@ public class HoverAmenitiesMenu_StepDefs {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedInTitle = "Restaurant";
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
-        Driver.getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
     }
 
     @Then("user clicks on Sauna")
     public void user_clicks_on_Sauna() {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 3);
-        wait.until(landingPage.Sauna.isDisplayed());
+        hoverAmenities.moveToElement(landingPage.Amenities_Header).build().perform();
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 7);
+        wait.until(ExpectedConditions.visibilityOf(landingPage.Sauna));
         landingPage.Sauna.click();
     }
 
